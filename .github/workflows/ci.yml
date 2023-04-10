@@ -20,9 +20,8 @@ jobs:
         run: cmake --build build_pc/ --target all
       - name: run unit tests
         run: cd build_pc && ctest
-      - uses: fiam/arm-none-eabi-gcc@v1
-        with:
-          release: '9-2019-q4' # The arm-none-eabi-gcc release to use.
+      - name: install arm gcc
+        run: sudo apt-get install gcc-arm-none-eabi
       - name: mkdir arm
         run: mkdir build_arm
       - name: cmake build arm
