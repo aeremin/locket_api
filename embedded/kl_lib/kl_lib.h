@@ -240,9 +240,6 @@ void SeedWithTrue();
 } // namespace
 #endif
 
-// ========================== Simple delay ===============================
-static inline void DelayLoop(volatile uint32_t ACounter) { while(ACounter--); }
-
 // See Programming manual: http://www.st.com/content/ccc/resource/technical/document/programming_manual/6c/3a/cb/e7/e4/ea/44/9b/DM00046982.pdf/files/DM00046982.pdf/jcr:content/translations/en.DM00046982.pdf
 // On writes, write 0x5FA to VECTKEY, otherwise the write is ignored. 4 is SYSRESETREQ: System reset request
 #define REBOOT()                SCB->AIRCR = 0x05FA0004
