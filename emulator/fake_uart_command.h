@@ -1,8 +1,11 @@
 #ifndef LOCKET_API_FAKE_UART_COMMAND_H
 #define LOCKET_API_FAKE_UART_COMMAND_H
 
+#include <cstdint>
+#include <optional>
 #include <string>
 #include <sstream>
+
 #include "api/uart_command.h"
 
 class FakeUartCommand: public UartCommand {

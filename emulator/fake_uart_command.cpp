@@ -1,7 +1,7 @@
 #include "fake_uart_command.h"
 
 #include <iostream>
-
+#include <limits>
 
 FakeUartCommand::FakeUartCommand(const std::string& command_line): stream(command_line) {
     stream >> command;
