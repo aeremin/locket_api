@@ -1,6 +1,8 @@
 #ifndef LOCKET_API_RADIO_LVL2_H
 #define LOCKET_API_RADIO_LVL2_H
 
+#include <limits>
+
 #include "kl_lib.h"
 #include "ch.h"
 #include "cc1101.h"
